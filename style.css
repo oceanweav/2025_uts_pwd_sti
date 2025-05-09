@@ -1,0 +1,132 @@
+:root {
+    --primary: #ff69b4;
+    --accent:#f8c8dc;
+    --gradient-bg: linear-gradient(to right, #ff69b4, #d04894, and #f8c8dc);
+    --text: white;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #d04894;
+    color: var(--text);
+  }
+
+  header {
+    background: var(--gradient-bg);
+    color: white;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 3rem;
+    margin-bottom: 9px;
+    font-weight: 600;
+    color: white
+}
+
+
+  header p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+
+  .cta-btn {
+    background-color: #ff69b4;
+    color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    padding-inline: 15px;
+    cursor: pointer;
+  }
+      .cta-btn:hover {
+        background: #f8c8dc;
+      }
+    .features {
+        border-top:1px dashed #fff0f5
+    }
+
+    .features-box{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .feauture{
+      background:#f8c8dc;
+      padding: 30px 20px;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .feauture:hover{
+      transform: translateY(-30px);
+    }
+
+    .feauturei{ 
+      font-size: 2.5rem;
+      color: var(--primary);
+      margin-bottom: 15px;
+    }
+
+    .feauture h3{
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+      color: var(--primary);
+    }
+    
+  section {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+  }
+
+  section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: black;
+  }
+
+  section p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  footer {
+    background: #ff69b4;
+    color: #bbb;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px ;
+  }
+
+  
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2.2rem;
+    }
+  
+    section p {
+      font-size: 1rem;
+    }
+  }
